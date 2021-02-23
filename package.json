@@ -1,0 +1,9 @@
+{
+  "name": "js-59qrv6",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@firebase/app": "^0.6.15",
+    "firebase": "^8.2.9"
+  }
+}
