@@ -20,14 +20,14 @@ document.getElementById("currTime").innerHTML = time;
 
 // Your web app's Firebase configuration 
 var firebaseConfig = {
-    apiKey: "AIzaSyDa8Swd7g6bLRk_aAwfiA8WxDpjbjYTEF4",
-    authDomain: "location-test-9a8c5.firebaseapp.com",
-    databaseURL: "https://location-test-9a8c5-default-rtdb.europe-west1.firebasedatabase.app",
-    projectId: "location-test-9a8c5",
-    storageBucket: "location-test-9a8c5.appspot.com",
-    messagingSenderId: "615132988102",
-    appId: "1:615132988102:web:6dc9ab22fd3b6901c04dc7"
-};
+    apiKey: "AIzaSyDWuHSYJe2vyD6jMQNEMixC8nz04kvHL-U",
+    authDomain: "hiker-project.firebaseapp.com",
+    databaseURL: "https://hiker-project-default-rtdb.firebaseio.com",
+    projectId: "hiker-project",
+    storageBucket: "hiker-project.appspot.com",
+    messagingSenderId: "239563715964",
+    appId: "1:239563715964:web:df16c95c819fcfdb10e0f9"
+  };
 // Initialize Firebase
 // firebase.initializeApp(firebaseConfig);
 if (!firebase.apps.length) {
