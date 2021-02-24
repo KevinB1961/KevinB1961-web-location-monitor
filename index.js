@@ -2,11 +2,11 @@
 import "./style.css";
 
 // This import loads the firebase namespace.
-import firebase from "firebase/app";
+import firebase from 'firebase/app';
 
 // These imports load individual services into the firebase namespace.
-import "firebase/auth";
-import "firebase/database";
+//import "firebase/auth";
+import 'firebase/database';
 
 import * as firebaseui from "firebaseui";
 
@@ -19,14 +19,13 @@ var time = today.getHours() + ":" + today.getMinutes();
 document.getElementById("currTime").innerHTML = time;
 
 // Your web app's Firebase configuration 
-var firebaseConfig = {
-    apiKey: "AIzaSyDWuHSYJe2vyD6jMQNEMixC8nz04kvHL-U",
-    authDomain: "hiker-project.firebaseapp.com",
-    databaseURL: "https://hiker-project-default-rtdb.firebaseio.com",
-    projectId: "hiker-project",
-    storageBucket: "hiker-project.appspot.com",
-    messagingSenderId: "239563715964",
-    appId: "1:239563715964:web:df16c95c819fcfdb10e0f9"
+  var firebaseConfig = {
+    apiKey: "AIzaSyAS7DSYk3TZH2wQV7aiSi9DnY2T_HeEPBQ",
+    authDomain: "temp-project-7e2e0.firebaseapp.com",
+    projectId: "temp-project-7e2e0",
+    storageBucket: "temp-project-7e2e0.appspot.com",
+    messagingSenderId: "94641102396",
+    appId: "1:94641102396:web:2be27e7388b4615cc12d39"
   };
 // Initialize Firebase
 // firebase.initializeApp(firebaseConfig);
