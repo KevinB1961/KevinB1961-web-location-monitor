@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@firebase/app": "^0.6.15",
+    "@firebase/app-types": "0.x",
+    "@firebase/firestore": "^2.1.7",
     "firebase": "^8.2.9"
   }
 }

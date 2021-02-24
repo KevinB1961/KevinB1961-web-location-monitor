@@ -7,6 +7,7 @@ import firebase from 'firebase/app';
 // These imports load individual services into the firebase namespace.
 //import "firebase/auth";
 import 'firebase/database';
+//import 'firebase/firestore';
 
 import * as firebaseui from "firebaseui";
 
@@ -19,25 +20,27 @@ var time = today.getHours() + ":" + today.getMinutes();
 document.getElementById("currTime").innerHTML = time;
 
 // Your web app's Firebase configuration 
-  var firebaseConfig = {
-    apiKey: "AIzaSyAS7DSYk3TZH2wQV7aiSi9DnY2T_HeEPBQ",
-    authDomain: "temp-project-7e2e0.firebaseapp.com",
-    projectId: "temp-project-7e2e0",
-    storageBucket: "temp-project-7e2e0.appspot.com",
-    messagingSenderId: "94641102396",
-    appId: "1:94641102396:web:2be27e7388b4615cc12d39"
+ var firebaseConfig = {
+    apiKey: "AIzaSyChFtBKai-DbZXpFhlZEsAagF2G6Yc-iwM",
+    authDomain: "hikerrep.firebaseapp.com",
+    projectId: "hikerrep",
+    storageBucket: "hikerrep.appspot.com",
+    messagingSenderId: "992309664101",
+    appId: "1:992309664101:web:f344837dc0187f6ee8298c"
   };
 // Initialize Firebase
 // firebase.initializeApp(firebaseConfig);
 if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig);
 }
-
 //establishes root of db
+const userDoc = firebase.firestore().collection('locations').doc;
+
 var rootRef = firebase
   .database()
   .ref()
   .limitToLast(5);
+  console.log(rootRef);
 
 //var ref = rootRef.child();
 
